@@ -1,0 +1,27 @@
+
+[libraries]
+
+filter.files = [
+  'src/rtl/filter/*.vhd*',
+]
+
+memory.files = [
+  'src/rtl/memory/*.vhd*',
+]
+
+servo.files = [
+  'src/rtl/servo/*.vhd*',
+]
+
+stream_processing.files = [
+  'src/rtl/stream_processing/*.vhd*',
+]
+
+top_level.files = [
+  'src/rtl/top_level/*.vhd*',
+]
+
+util.files = [
+  'src/rtl/util/*.vhd*',
+]
+
