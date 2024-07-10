@@ -4,14 +4,13 @@ This project is a technology showcase of an image-tracking system implemented in
 
 This project was submitted to the [AMDs Open Hardware Contest](https://www.openhw.eu/).
 
-For an explanation of the design see `documentation/documentation.pdf`.
+For an explanation of the design, see `documentation/documentation.pdf`.
 
 
 | Team Number | AOHW-239 |
 | :-- | :-- |
 | Project Name | FPGA accelerated Stewart Platform Stabilization using Xilinx Zynq |
-| Repo | [Link](https://github.com/IMS-AS-LUH/zynq-stewart-platform
-)|
+| Repo | [Link](https://github.com/IMS-AS-LUH/zynq-stewart-platform)|
 | Showcase Video |[Link](https://youtu.be/tm8HUrqKewo) |
 | Participant | Bastian Fuhlenriede (bastian.fuhlenriede@stud.uni-hannover.de) |
 | Supervisor | Nils Stanislawski, M.Sc (nils.stanislawski@ims.uni-hannover.de) |
@@ -21,10 +20,10 @@ For an explanation of the design see `documentation/documentation.pdf`.
 # Dependencies
 | Package | Version |
 | :-- | :-- |
-| `simple_pid`|>= 2.0.0 |
 |  `numpy`|>= 1.21.5 |
 | `opencv-pyton` |>= 4.5.4 |
 | `pynq` |>= 3.0.1 |
+| `simple_pid`|>= 2.0.0 |
 
 # File Structure
 ```
@@ -112,17 +111,17 @@ This generates all relevant project files and should automatically open the proj
 # Setup System
 
 > Requirements: 
-> - PYNQ Z2 Board with the pynq linux image 
+> - PYNQ Z2 Board with the PYNQ Linux image 
 > - Servo-based Stewart Platform 
-> - A Camera, cost effective actions cam have not worked, and a Raspberry Pi Cam was used to test the system
+> - A Camera, we used a Raspberry Pi Cam
 
 
 This section describes the setup process from the side of the board. For instructions on building a Stewart Platform, follow, for example, this [guide](https://www.instructables.com/Stewart-Platform/).
 
 ### Step 1
-The first step is to set up the files on the PYNQ Board. This is done by copying all files from the `setup/` directory into Jupyter's main folder at `/home/xilinx/jupyter_notebooks`. This is easily done via the web interface. This already includes all the Python scripts and prebuilt bitfiles necessary.
+The first step is to set up the files on the PYNQ Board. This is done by copying all files from the `setup/` directory into Jupyter's main folder at `/home/xilinx/jupyter_notebooks`. This is easily done via the web interface. This already includes all the necessary Python scripts and prebuilt bit files.
 
-Alternatively, the bit files could be built individually and be placed into a folder named `bit_files`. They should be labeled `top_level.bit` and `top_level.hwh`. The contents of `src/python` also need to be copied into the same folder.
+Alternatively, the bit files could be built individually and be placed into a folder named `bit_files`. They should be labeled `top_level.bit` and `top_level.hwh`. The contents of `src/python` must also be copied into the same folder.
 
 ### Step 2
 To connect the board to the platform, follow the pins' allocations in the section `Servo Allocation`. The pair of adjacent servos are 0-2,  1-3, and 4-5. In a circular clockwise order, 0-2-5-4-3-2.
@@ -131,9 +130,9 @@ To connect the board to the platform, follow the pins' allocations in the sectio
 Use the `Servo Setup.ipynb` script to calibrate the servos. This offers a slider for each servo. Determine the value for -90° and 90° for each servo and set them in `servo.py::servo_limits`.
 
 #### Step 4
-Finally, execute all steps inside of `VideoPipelineSetup.ipynb`. This loads the bit file and configures the system. If no video input or output is connected at this point, it will probably hang and crash at some point. 
+Finally, execute all steps inside of `VideoPipelineSetup.ipynb`. This loads the bit file and configures the system. If no video input or output is connected at this point, it will probably hang and crash. 
 
-If the script is running, the design can then be controlled via the four buttons and two switches at the front of the board. The buttons turn on and off the individual filters. The switches add additional smoothing filters. For this, they work like a binary counter, so three additional smoothing stages can be added. They are only active if the smoothing is turned on, and one stage will always be active. From left to right, the buttons turn on the ball detection, the edge filter, the smoothing filter, and the image crop.
+If the script is running, the design can be controlled via the four buttons and two switches at the front of the board. The buttons turn on and off the individual filters. The switches add additional smoothing filters. For this, they work like a binary counter, so three additional smoothing stages can be added. They are only active if the smoothing is turned on, and one stage will always be active. From left to right, the buttons turn on the ball detection, the edge filter, the smoothing filter, and the image crop.
 
 # Servo Allocation
 The board outputs the generated PWM signals over the RPI-Connecter interface. It is located at the edge of the board between the HDMI connectors. The PWM outputs are connected as such:
@@ -166,7 +165,7 @@ The values for the PWM signals for the servos are set through the AXI bus. The c
 
 # Pipeline Control Interface
 
-The filter modules are not connected in a specific order. Instead, they are connected to an AXI switch that is used to set the order freely. It is located at address `0x4000_0000` and is configured by connecting the output ports to the inputs. For this, every output has its own register at a fixed offset to which the connected input number should be written. The table below shows the offset corresponding to the individual filters. For example, to route the edge detection output to the histogram projection input, one would write `2` into the register at offset `0x4c`. The changes to these registers do not take effect immediately. They need to be committed by writing a `0x2` into the register at offset `0x0`. More details can be found in the documentation of the AXI4-Stream Switch.
+The filter modules are not connected in a specific order. Instead, they are connected to an AXI switch that is used to set the order freely. It is located at address `0x4000_0000` and is configured by connecting the output ports to the inputs. For this, every output has its own register at a fixed offset to which the connected input number should be written. The table below shows the offset corresponding to the individual filters. For example, one would write `2` into the register at offset `0x4c` to route the edge detection output to the histogram projection input. The changes to these registers do not take effect immediately. They must be committed by writing a `0x2` into the register at offset `0x0`. More details can be found in the documentation of the AXI4-Stream Switch.
 
 Every filter input and output is connected to the same input and output port index. For example, the edge detection output is connected to master port 2, and its input is connected to slave port 2. The first input port and output port represent the HDMI input and output.
 
@@ -204,17 +203,17 @@ https://www.instructables.com/Stewart-Platform/, gives instructions on how to bu
 # Potential Problems
 
 ## The output image contains artifacts at the edges
-This happens because the pipeline is never emptied, as such the preceding frame can affect the edge of the following one. However, this should not lead to any problems. If it does, they can be removed using the crop module.
+This happens because the pipeline is never emptied, so the preceding frame can affect the edge of the following one. However, this should not lead to any problems. If it does, they can be removed using the crop module.
 
 ## The Kernel crashed
-This can happen sometimes, mainly because the HDMI has not yet been connected. A rerun of the script should fix this, but see `The Image is shifted along the x-axis` for the side effect of reloading the overlay.
+This can happen sometimes, mainly because the HDMI has not yet been connected. A script rerun should fix this, but see `The Image is shifted along the x-axis` for the side effect of reloading the overlay.
 
 ## The image is shifted along the x-axis
-The output image can be shifted along the x-axis if the overlay has been loaded previously and is loaded again. It is unclear why this happens, and it is fixed by restarting the board.
+If the overlay has been loaded previously and is loaded again, the output image can be shifted along the x-axis. It is unclear why this happens, but restarting the board fixes it.
 
 
 ## The script has been running for a long time.
-The time it takes to detect the HDMI source can vary quite a lot between sources. If the Source can't be detected, it should eventually time out. See the `The configuration failed` section.
+The time it takes to detect the HDMI source can vary greatly between sources. If the Source can't be detected, it should eventually time out. See the `The configuration failed` section.
 
 ## The configuration failed
-The configuration of the input HDMI module may fail because of the particular device used even if it is connected. The detection section of the design can't identify some devices. For example, some action cams can not be detected. However, the script will not immediately fail if it can't detect a connection. Instead, it will only fail after it hits its timeout delay. A way around this is to connect the cam over USB to a laptop and then connect the laptop to the board and just open an application on the laptop, for example, OBS, that shows the camera feed.
+The configuration of the input HDMI module may fail because of the particular device used even if it is connected. The detection section of the design can't identify some devices. For example, some action cams can not be detected. However, the script will not immediately fail if it can't detect a connection. Instead, it will only fail after it hits its timeout delay. A way around this is to connect the cam over USB to a laptop and then connect the laptop to the board and open an application on the laptop, for example, OBS, that shows the camera feed.
