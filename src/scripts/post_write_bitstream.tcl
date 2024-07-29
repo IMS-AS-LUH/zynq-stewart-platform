@@ -31,5 +31,5 @@ if {[file exists $RELATIVE_PATH/output/top_level.hwh] == 1} {
 	file delete $RELATIVE_PATH/output/top_level.hwh
 }
 
-file copy top_level.bit $RELATIVE_PATH/output/top_level.bit
-file copy $RELATIVE_PATH/../bd/base/hw_handoff/design_base.hwh $RELATIVE_PATH/output/top_level.hwh
+#file copy top_level.bit $RELATIVE_PATH/output/top_level.bit
+#file copy $RELATIVE_PATH/bd_base/design_base/hw_handoff/design_base.hwh $RELATIVE_PATH/output/top_level.hwh

@@ -62,12 +62,14 @@ foreach dir [glob $REFERENCE_DIR/rtl/*] {
 	set_property library $lib_name [get_files *rtl/$lib_name*]
 }
 
-foreach dir [glob $REFERENCE_DIR/bd/*] {
-	set lib_name  [string map [list $REFERENCE_DIR/bd/ ""] $dir]
-	add_files -fileset sources_1 [glob $dir/*.bd]
-	add_files -fileset sources_1 $dir/hdl
-	set_property library $lib_name [get_files *bd/$lib_name/hdl/*]
-}
+source ./design_base.tcl
+
+# foreach dir [glob $REFERENCE_DIR/bd/*] {
+# 	set lib_name  [string map [list $REFERENCE_DIR/bd/ ""] $dir]
+# 	add_files -fileset sources_1 [glob $dir/*.bd]
+# 	add_files -fileset sources_1 $dir/hdl
+# 	set_property library $lib_name [get_files *bd/$lib_name/hdl/*]
+# }
 
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]

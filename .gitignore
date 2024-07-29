@@ -1,10 +1,11 @@
 
 # Contains the auto generated projects file from vivado
-output/*.tcl
-output/*.hwh
+**/output/*.tcl
+**/output/*.hwh
 
-ip/*
-
+**/bd/*
+**/design_base/*
+**/VideoDetectionPipeline/*
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
