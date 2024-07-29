@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'pixel_unpack'
+================================================================
+* Date:           Sat Apr 29 15:19:27 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        pixel_unpack
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  1.978 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                  |                                       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                     Instance                     |                 Module                |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_pixel_unpack_Pipeline_VITIS_LOOP_85_9_fu_82   |pixel_unpack_Pipeline_VITIS_LOOP_85_9  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_pixel_unpack_Pipeline_VITIS_LOOP_68_7_fu_106  |pixel_unpack_Pipeline_VITIS_LOOP_68_7  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_pixel_unpack_Pipeline_VITIS_LOOP_51_5_fu_130  |pixel_unpack_Pipeline_VITIS_LOOP_51_5  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_pixel_unpack_Pipeline_VITIS_LOOP_40_4_fu_154  |pixel_unpack_Pipeline_VITIS_LOOP_40_4  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_pixel_unpack_Pipeline_VITIS_LOOP_19_1_fu_178  |pixel_unpack_Pipeline_VITIS_LOOP_19_1  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +--------------------------------------------------+---------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      4|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     257|    560|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    242|    -|
+|Register         |        -|    -|      73|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     330|    806|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
+    |                     Instance                     |                 Module                | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
+    |control_s_axi_U                                   |control_s_axi                          |        0|   0|   68|  104|    0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_19_1_fu_178  |pixel_unpack_Pipeline_VITIS_LOOP_19_1  |        0|   0|  109|  150|    0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_40_4_fu_154  |pixel_unpack_Pipeline_VITIS_LOOP_40_4  |        0|   0|    2|   29|    0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_51_5_fu_130  |pixel_unpack_Pipeline_VITIS_LOOP_51_5  |        0|   0|   30|  107|    0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_68_7_fu_106  |pixel_unpack_Pipeline_VITIS_LOOP_68_7  |        0|   0|   20|   85|    0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_85_9_fu_82   |pixel_unpack_Pipeline_VITIS_LOOP_85_9  |        0|   0|   28|   85|    0|
+    +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
+    |Total                                             |                                       |        0|   0|  257|  560|    0|
+    +--------------------------------------------------+---------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                             Variable Name                             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_19_1_fu_178_stream_out_24_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_on_subcall_done                                        |        or|   0|  0|   2|           1|           1|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                  |          |   0|  0|   4|           2|           2|
+    +-----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                          |  25|          5|    1|          5|
+    |stream_in_32_TREADY_int_regslice   |  31|          6|    1|          6|
+    |stream_out_24_TDATA_int_regslice   |  31|          6|   24|        144|
+    |stream_out_24_TKEEP_int_regslice   |  31|          6|    3|         18|
+    |stream_out_24_TLAST_int_regslice   |  31|          6|    1|          6|
+    |stream_out_24_TSTRB_int_regslice   |  31|          6|    3|         18|
+    |stream_out_24_TUSER_int_regslice   |  31|          6|    1|          6|
+    |stream_out_24_TVALID_int_regslice  |  31|          6|    1|          6|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              | 242|         47|   35|        209|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                             | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                      |   4|   0|    4|          0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_19_1_fu_178_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_40_4_fu_154_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_51_5_fu_130_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_68_7_fu_106_ap_start_reg  |   1|   0|    1|          0|
+    |grp_pixel_unpack_Pipeline_VITIS_LOOP_85_9_fu_82_ap_start_reg   |   1|   0|    1|          0|
+    |mode_0_data_reg                                                |  32|   0|   32|          0|
+    |mode_0_vld_reg                                                 |   0|   0|    1|          1|
+    |mode_read_reg_202                                              |  32|   0|   32|          0|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                          |  73|   0|   74|          1|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+--------------+------------------------+--------------+
+|       RTL Ports       | Dir | Bits|   Protocol   |      Source Object     |    C Type    |
++-----------------------+-----+-----+--------------+------------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|         s_axi|                 control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|         s_axi|                 control|        scalar|
+|s_axi_control_AWADDR   |   in|    5|         s_axi|                 control|        scalar|
+|s_axi_control_WVALID   |   in|    1|         s_axi|                 control|        scalar|
+|s_axi_control_WREADY   |  out|    1|         s_axi|                 control|        scalar|
+|s_axi_control_WDATA    |   in|   32|         s_axi|                 control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|         s_axi|                 control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|         s_axi|                 control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|         s_axi|                 control|        scalar|
+|s_axi_control_ARADDR   |   in|    5|         s_axi|                 control|        scalar|
+|s_axi_control_RVALID   |  out|    1|         s_axi|                 control|        scalar|
+|s_axi_control_RREADY   |   in|    1|         s_axi|                 control|        scalar|
+|s_axi_control_RDATA    |  out|   32|         s_axi|                 control|        scalar|
+|s_axi_control_RRESP    |  out|    2|         s_axi|                 control|        scalar|
+|s_axi_control_BVALID   |  out|    1|         s_axi|                 control|        scalar|
+|s_axi_control_BREADY   |   in|    1|         s_axi|                 control|        scalar|
+|s_axi_control_BRESP    |  out|    2|         s_axi|                 control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_none|            pixel_unpack|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_none|            pixel_unpack|  return value|
+|stream_in_32_TDATA     |   in|   32|          axis|   stream_in_32_V_data_V|       pointer|
+|stream_in_32_TVALID    |   in|    1|          axis|   stream_in_32_V_last_V|       pointer|
+|stream_in_32_TREADY    |  out|    1|          axis|   stream_in_32_V_last_V|       pointer|
+|stream_in_32_TLAST     |   in|    1|          axis|   stream_in_32_V_last_V|       pointer|
+|stream_in_32_TKEEP     |   in|    4|          axis|   stream_in_32_V_keep_V|       pointer|
+|stream_in_32_TSTRB     |   in|    4|          axis|   stream_in_32_V_strb_V|       pointer|
+|stream_in_32_TUSER     |   in|    1|          axis|   stream_in_32_V_user_V|       pointer|
+|stream_out_24_TDATA    |  out|   24|          axis|  stream_out_24_V_data_V|       pointer|
+|stream_out_24_TVALID   |  out|    1|          axis|  stream_out_24_V_last_V|       pointer|
+|stream_out_24_TREADY   |   in|    1|          axis|  stream_out_24_V_last_V|       pointer|
+|stream_out_24_TLAST    |  out|    1|          axis|  stream_out_24_V_last_V|       pointer|
+|stream_out_24_TKEEP    |  out|    3|          axis|  stream_out_24_V_keep_V|       pointer|
+|stream_out_24_TSTRB    |  out|    3|          axis|  stream_out_24_V_strb_V|       pointer|
+|stream_out_24_TUSER    |  out|    1|          axis|  stream_out_24_V_user_V|       pointer|
++-----------------------+-----+-----+--------------+------------------------+--------------+
+

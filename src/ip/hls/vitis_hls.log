@@ -1,0 +1,149 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/VITIS_~1/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/VITIS_~1/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Bastian' on host 'baeshen-pc' (Windows NT_amd64 version 6.2) on Sat Apr 29 15:20:18 +0200 2023
+INFO: [HLS 200-10] In directory 'C:/Users/Sebastian/Documents/Studium/Master/HwP/PYNQ/boards/ip/hls'
+Sourcing Tcl script 'trace_cntrl_64/script.tcl'
+INFO: [HLS 200-1510] Running: open_project trace_cntrl_64 
+INFO: [HLS 200-10] Opening project 'C:/Users/Sebastian/Documents/Studium/Master/HwP/PYNQ/boards/ip/hls/trace_cntrl_64'.
+INFO: [HLS 200-1510] Running: set_top trace_cntrl_64 
+INFO: [HLS 200-1510] Running: add_files trace_cntrl_64/trace_cntrl_64.cpp 
+INFO: [HLS 200-10] Adding design file 'trace_cntrl_64/trace_cntrl_64.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution 'C:/Users/Sebastian/Documents/Studium/Master/HwP/PYNQ/boards/ip/hls/trace_cntrl_64/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -description {Controller for the trace analyzer with 64-bit data}
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Trace Analyzer Controller with 64 Bits Data}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.4
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Analyzing design file 'trace_cntrl_64/trace_cntrl_64.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.461 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(bool)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:254:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(bool)' into 'ap_uint<1>::ap_uint(bool)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot/ap_int.h:327:59)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_int<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_int<64>, 1ul, 1ul, 1ul>&)' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (trace_cntrl_64/trace_cntrl_64.cpp:29:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_int<64>, 1ul, 1ul, 1ul> const&)' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (trace_cntrl_64/trace_cntrl_64.cpp:35:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::to_int() const' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (trace_cntrl_64/trace_cntrl_64.cpp:30:80)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::to_int() const' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (trace_cntrl_64/trace_cntrl_64.cpp:30:59)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::to_int() const' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (trace_cntrl_64/trace_cntrl_64.cpp:30:30)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_int<64>s.i64' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_int<64>s' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<8>s.i8' into 'trace_cntrl_64(hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_int<64>, 1ul, 1ul, 1ul>, 0>&, ap_int<64>, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.135 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'trace_cntrl_64' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'trace_cntrl_64_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+WARNING: [HLS 200-880] The II Violation in module 'trace_cntrl_64_Pipeline_VITIS_LOOP_27_1' (loop 'VITIS_LOOP_27_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'add' operation ('i', trace_cntrl_64/trace_cntrl_64.cpp:27) and 'icmp' operation ('icmp_ln30', trace_cntrl_64/trace_cntrl_64.cpp:30).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 2, loop 'VITIS_LOOP_27_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'trace_cntrl_64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'trace_cntrl_64_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'trace_cntrl_64_Pipeline_VITIS_LOOP_27_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'trace_cntrl_64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trigger' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/length_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'trace_cntrl_64' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'trigger', 'length_r' and 'return' to AXI-Lite port trace_cntrl.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'trace_cntrl_64'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.401 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.661 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.906 seconds; current allocated memory: 1.211 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for trace_cntrl_64.
+INFO: [VLOG 209-307] Generating Verilog RTL for trace_cntrl_64.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 168.80 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 13.639 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description Controller for the trace analyzer with 64-bit data -version 1.4 -display_name Trace Analyzer Controller with 64 Bits Data 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 29 15:20:47 2023...
+INFO: [HLS 200-802] Generated output file trace_cntrl_64/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.362 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 3 seconds. Total elapsed time: 29.708 seconds; peak allocated memory: 1.211 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat Apr 29 15:20:47 2023...

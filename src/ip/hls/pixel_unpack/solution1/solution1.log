@@ -1,0 +1,527 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 7 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] Analyzing design file 'pixel_unpack/pixel_unpack.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.792 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>::ap_range_ref(ap_int_base<96, false>*, int, int)' into 'ap_int_base<96, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::range(int, int)' into 'ap_int_base<96, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<96, false>& ap_range_ref<96, false>::operator=<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>::get() const' into 'ap_int_base<24, false>::ap_int_base<96, false>(ap_range_ref<96, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<96, false>(ap_range_ref<96, false> const&)' into 'ap_uint<24>::ap_uint<96, false>(ap_range_ref<96, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int.h:255:92)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<24, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_uint<24>::ap_uint<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int.h:255:92)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)' into 'ap_int_base<24, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1093:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_int_base<24, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:1130:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_ref.h:428:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_int_ref.h:428:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:22:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:99:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:98:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:97:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:23)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:92:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:89:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:87:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:80:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:79:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:78:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:22)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:75:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:72:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:70:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:63:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:62:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:61:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:58:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:55:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:53:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:47:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:46:11)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:43:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:43:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:42:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:34:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:33:22)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:32:41)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint<96, false>(ap_range_ref<96, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:31:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:31:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:28:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>& ap_int_base<1, false>::operator|=<1, false>(ap_int_base<1, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:27:14)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>& ap_range_ref<96, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:26:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:26:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:25:18)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:23:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_24_2' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:24:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_30_3' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:30:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_6' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:57:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_74_8' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:74:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_91_10' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:91:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_24_2' (pixel_unpack/pixel_unpack.cpp:24:21) in function 'pixel_unpack' completely with a factor of 3 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_30_3' (pixel_unpack/pixel_unpack.cpp:30:21) in function 'pixel_unpack' completely with a factor of 4 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (pixel_unpack/pixel_unpack.cpp:57:21) in function 'pixel_unpack' completely with a factor of 4 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_74_8' (pixel_unpack/pixel_unpack.cpp:74:21) in function 'pixel_unpack' completely with a factor of 2 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_91_10' (pixel_unpack/pixel_unpack.cpp:91:22) in function 'pixel_unpack' completely with a factor of 2 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i3.s_struct.ap_uint<3>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2021.2/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 7.362 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pixel_unpack' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_85_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_85_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_68_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_68_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_68_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_51_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_51_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 4, loop 'VITIS_LOOP_51_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_40_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 6, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.187 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_85_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_85_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_68_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_68_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_51_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_51_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_40_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_19_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/mode' to 's_axilite & ap_none' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'pixel_unpack' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Cannot apply register mode option on port mode. It is not an AXI-Stream interface.
+INFO: [RTGEN 206-100] Bundling port 'mode' and 'ap_local_deadlock' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.428 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.743 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.884 seconds; current allocated memory: 1.187 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for pixel_unpack.
+INFO: [VLOG 209-307] Generating Verilog RTL for pixel_unpack.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 434.40 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 17.743 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description Pixel Unpacking from 32-bit to 24-bit -display_name Pixel Unpack 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 13.453 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 4 seconds. Total elapsed time: 34.686 seconds; peak allocated memory: 1.187 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Apr 23 22:10:08 2023...
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -description {Pixel Unpacking from 32-bit to 24-bit}
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Pixel Unpack}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 7 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Analyzing design file 'pixel_unpack/pixel_unpack.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 5.805 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_uint<1>::ap_uint(int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:333:58)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>::ap_range_ref(ap_int_base<96, false>*, int, int)' into 'ap_int_base<96, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::range(int, int)' into 'ap_int_base<96, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi96ELb0EEC2EDq96_j' into 'ap_int_base<96, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<96, false>& ap_range_ref<96, false>::operator=<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>::get() const' into 'ap_int_base<24, false>::ap_int_base<96, false>(ap_range_ref<96, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<96, false>(ap_range_ref<96, false> const&)' into 'ap_uint<24>::ap_uint<96, false>(ap_range_ref<96, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:266:92)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<24, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_uint<24>::ap_uint<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:266:92)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base(int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base(int)' into 'ap_uint<24>::ap_uint(int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:333:58)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)' into 'ap_int_base<24, false>::range(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_int_base<24, false>::operator()(int, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base<24, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_int_base<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:428:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:428:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:22:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:99:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:98:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:97:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:95:23)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:94:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:93:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:92:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:89:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:87:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:80:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:79:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:78:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:76:22)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:75:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:72:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:70:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:63:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:62:36)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:61:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:59:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:58:28)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:55:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:53:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:47:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:46:11)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint<32, false>(ap_range_ref<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:43:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:43:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:42:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<24>, 1ul, 0ul, 0ul> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:34:19)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:33:22)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:32:41)
+INFO: [HLS 214-131] Inlining function 'ap_uint<24>::ap_uint<96, false>(ap_range_ref<96, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:31:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:31:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator unsigned long long() const' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:28:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>& ap_int_base<1, false>::operator|=<1, false>(ap_int_base<1, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:27:14)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<96, false>& ap_range_ref<96, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:26:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<96, false>::operator()(int, int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:26:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>::read(hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>&)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:25:18)
+INFO: [HLS 214-131] Inlining function 'ap_uint<1>::ap_uint(int)' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (pixel_unpack/pixel_unpack.cpp:23:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_24_2' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:24:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_30_3' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:30:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_57_6' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:57:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_74_8' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:74:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_91_10' is marked as complete unroll implied by the pipeline pragma (pixel_unpack/pixel_unpack.cpp:91:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_24_2' (pixel_unpack/pixel_unpack.cpp:24:21) in function 'pixel_unpack' completely with a factor of 3 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_30_3' (pixel_unpack/pixel_unpack.cpp:30:21) in function 'pixel_unpack' completely with a factor of 4 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (pixel_unpack/pixel_unpack.cpp:57:21) in function 'pixel_unpack' completely with a factor of 4 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_74_8' (pixel_unpack/pixel_unpack.cpp:74:21) in function 'pixel_unpack' completely with a factor of 2 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_91_10' (pixel_unpack/pixel_unpack.cpp:91:22) in function 'pixel_unpack' completely with a factor of 2 (pixel_unpack/pixel_unpack.cpp:8:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<32>s.i32' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i3.s_struct.ap_uint<3>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint<24>s' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<4>s.i4' into 'pixel_unpack(hls::stream<hls::axis<ap_uint<32>, 1ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul>, 0>&, int)' (C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 7.867 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pixel_unpack' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_85_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_85_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_68_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_68_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_68_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_51_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_51_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 4, loop 'VITIS_LOOP_51_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_40_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 6, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.211 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_85_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_85_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_68_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_68_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_51_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_51_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_40_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_40_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pixel_unpack_Pipeline_VITIS_LOOP_19_1' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack_Pipeline_VITIS_LOOP_19_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/mode' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'pixel_unpack' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'mode' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.415 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.771 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.941 seconds; current allocated memory: 1.211 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for pixel_unpack.
+INFO: [VLOG 209-307] Generating Verilog RTL for pixel_unpack.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 505.56 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 2 seconds. Elapsed time: 18.422 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description Pixel Unpacking from 32-bit to 24-bit -display_name Pixel Unpack 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file pixel_unpack/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.481 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 3 seconds. Total elapsed time: 34.651 seconds; peak allocated memory: 1.211 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat Apr 29 15:19:42 2023...

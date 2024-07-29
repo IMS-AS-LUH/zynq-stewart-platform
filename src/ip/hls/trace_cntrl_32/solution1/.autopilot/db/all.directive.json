@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "trace_cntrl_32",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/Sebastian\/Documents\/Studium\/Master\/HwP\/PYNQ\/boards\/ip\/hls\/trace_cntrl_32\/script.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "trace_cntrl_32"
+              }]
+          }
+        }]
+    }]}

@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'trace_cntrl_32'
+================================================================
+* Date:           Sat Apr 29 15:20:00 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        trace_cntrl_32
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.924 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                   |                                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                      Instance                     |                  Module                 |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82  |trace_cntrl_32_Pipeline_VITIS_LOOP_28_1  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     41|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     257|    493|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     34|    -|
+|Register         |        -|    -|     101|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     358|    568|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |                      Instance                     |                  Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82  |trace_cntrl_32_Pipeline_VITIS_LOOP_28_1  |        0|   0|  145|  325|    0|
+    |trace_cntrl_s_axi_U                                |trace_cntrl_s_axi                        |        0|   0|  112|  168|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |Total                                              |                                         |        0|   0|  257|  493|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                            Variable Name                            | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |sub_fu_117_p2                                                        |         +|   0|  0|  39|          32|           2|
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82_capture_32_TREADY  |       and|   0|  0|   2|           1|           1|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                |          |   0|  0|  41|          33|           3|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  25|          5|    1|          5|
+    |trace_32_TREADY_int_regslice  |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  34|          7|    2|          7|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                              | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                       |   4|   0|    4|          0|
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82_ap_start_reg  |   1|   0|    1|          0|
+    |length_r_read_reg_123                                           |  32|   0|   32|          0|
+    |sub_reg_133                                                     |  32|   0|   32|          0|
+    |trigger_read_reg_128                                            |  32|   0|   32|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                           | 101|   0|  101|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+---------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++---------------------------+-----+-----+------------+---------------------+--------------+
+|s_axi_trace_cntrl_AWVALID  |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_AWREADY  |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_AWADDR   |   in|    5|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WVALID   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WREADY   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WDATA    |   in|   32|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WSTRB    |   in|    4|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARVALID  |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARREADY  |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARADDR   |   in|    5|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RVALID   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RREADY   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RDATA    |  out|   32|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RRESP    |  out|    2|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BVALID   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BREADY   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BRESP    |  out|    2|       s_axi|          trace_cntrl|        scalar|
+|ap_clk                     |   in|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|ap_rst_n                   |   in|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|interrupt                  |  out|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|trace_32_TDATA             |   in|   32|        axis|    trace_32_V_data_V|       pointer|
+|trace_32_TVALID            |   in|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TREADY            |  out|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TDEST             |   in|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TKEEP             |   in|    4|        axis|    trace_32_V_keep_V|       pointer|
+|trace_32_TSTRB             |   in|    4|        axis|    trace_32_V_strb_V|       pointer|
+|trace_32_TUSER             |   in|    1|        axis|    trace_32_V_user_V|       pointer|
+|trace_32_TLAST             |   in|    1|        axis|    trace_32_V_last_V|       pointer|
+|trace_32_TID               |   in|    1|        axis|      trace_32_V_id_V|       pointer|
+|capture_32_TDATA           |  out|   32|        axis|  capture_32_V_data_V|       pointer|
+|capture_32_TVALID          |  out|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TREADY          |   in|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TDEST           |  out|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TKEEP           |  out|    4|        axis|  capture_32_V_keep_V|       pointer|
+|capture_32_TSTRB           |  out|    4|        axis|  capture_32_V_strb_V|       pointer|
+|capture_32_TUSER           |  out|    1|        axis|  capture_32_V_user_V|       pointer|
+|capture_32_TLAST           |  out|    1|        axis|  capture_32_V_last_V|       pointer|
+|capture_32_TID             |  out|    1|        axis|    capture_32_V_id_V|       pointer|
++---------------------------+-----+-----+------------+---------------------+--------------+
+

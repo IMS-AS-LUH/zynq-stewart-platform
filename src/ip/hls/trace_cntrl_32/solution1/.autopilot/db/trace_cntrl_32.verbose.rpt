@@ -1,0 +1,867 @@
+
+
+================================================================
+== Vitis HLS Report for 'trace_cntrl_32'
+================================================================
+* Date:           Sat Apr 29 15:20:00 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        trace_cntrl_32
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.924 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                   |                                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                      Instance                     |                  Module                 |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82  |trace_cntrl_32_Pipeline_VITIS_LOOP_28_1  |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     41|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        0|    -|     257|    493|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     34|    -|
+|Register         |        -|    -|     101|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     358|    568|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |                      Instance                     |                  Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82  |trace_cntrl_32_Pipeline_VITIS_LOOP_28_1  |        0|   0|  145|  325|    0|
+    |trace_cntrl_s_axi_U                                |trace_cntrl_s_axi                        |        0|   0|  112|  168|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |Total                                              |                                         |        0|   0|  257|  493|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                            Variable Name                            | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |sub_fu_117_p2                                                        |         +|   0|  0|  39|          32|           2|
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82_capture_32_TREADY  |       and|   0|  0|   2|           1|           1|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                |          |   0|  0|  41|          33|           3|
+    +---------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  25|          5|    1|          5|
+    |trace_32_TREADY_int_regslice  |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  34|          7|    2|          7|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                              | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                       |   4|   0|    4|          0|
+    |grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82_ap_start_reg  |   1|   0|    1|          0|
+    |length_r_read_reg_123                                           |  32|   0|   32|          0|
+    |sub_reg_133                                                     |  32|   0|   32|          0|
+    |trigger_read_reg_128                                            |  32|   0|   32|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                           | 101|   0|  101|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+---------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++---------------------------+-----+-----+------------+---------------------+--------------+
+|s_axi_trace_cntrl_AWVALID  |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_AWREADY  |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_AWADDR   |   in|    5|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WVALID   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WREADY   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WDATA    |   in|   32|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_WSTRB    |   in|    4|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARVALID  |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARREADY  |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_ARADDR   |   in|    5|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RVALID   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RREADY   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RDATA    |  out|   32|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_RRESP    |  out|    2|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BVALID   |  out|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BREADY   |   in|    1|       s_axi|          trace_cntrl|        scalar|
+|s_axi_trace_cntrl_BRESP    |  out|    2|       s_axi|          trace_cntrl|        scalar|
+|ap_clk                     |   in|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|ap_rst_n                   |   in|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|interrupt                  |  out|    1|  ap_ctrl_hs|       trace_cntrl_32|  return value|
+|trace_32_TDATA             |   in|   32|        axis|    trace_32_V_data_V|       pointer|
+|trace_32_TVALID            |   in|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TREADY            |  out|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TDEST             |   in|    1|        axis|    trace_32_V_dest_V|       pointer|
+|trace_32_TKEEP             |   in|    4|        axis|    trace_32_V_keep_V|       pointer|
+|trace_32_TSTRB             |   in|    4|        axis|    trace_32_V_strb_V|       pointer|
+|trace_32_TUSER             |   in|    1|        axis|    trace_32_V_user_V|       pointer|
+|trace_32_TLAST             |   in|    1|        axis|    trace_32_V_last_V|       pointer|
+|trace_32_TID               |   in|    1|        axis|      trace_32_V_id_V|       pointer|
+|capture_32_TDATA           |  out|   32|        axis|  capture_32_V_data_V|       pointer|
+|capture_32_TVALID          |  out|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TREADY          |   in|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TDEST           |  out|    1|        axis|  capture_32_V_dest_V|       pointer|
+|capture_32_TKEEP           |  out|    4|        axis|  capture_32_V_keep_V|       pointer|
+|capture_32_TSTRB           |  out|    4|        axis|  capture_32_V_strb_V|       pointer|
+|capture_32_TUSER           |  out|    1|        axis|  capture_32_V_user_V|       pointer|
+|capture_32_TLAST           |  out|    1|        axis|  capture_32_V_last_V|       pointer|
+|capture_32_TID             |  out|    1|        axis|    capture_32_V_id_V|       pointer|
++---------------------------+-----+-----+------------+---------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.55>
+ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%length_r_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %length_r" [trace_cntrl_32/trace_cntrl_32.cpp:16]   --->   Operation 5 'read' 'length_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%trigger_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %trigger" [trace_cntrl_32/trace_cntrl_32.cpp:16]   --->   Operation 6 'read' 'trigger_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (2.55ns)   --->   "%sub = add i32 %length_r_read, i32 4294967295" [trace_cntrl_32/trace_cntrl_32.cpp:16]   --->   Operation 7 'add' 'sub' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 5.92>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 8 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [2/2] (5.92ns)   --->   "%call_ln16 = call void @trace_cntrl_32_Pipeline_VITIS_LOOP_28_1, i32 %length_r_read, i32 %sub, i32 %capture_32_V_data_V, i4 %capture_32_V_keep_V, i4 %capture_32_V_strb_V, i1 %capture_32_V_user_V, i1 %capture_32_V_last_V, i1 %capture_32_V_id_V, i1 %capture_32_V_dest_V, i32 %trace_32_V_data_V, i4 %trace_32_V_keep_V, i4 %trace_32_V_strb_V, i1 %trace_32_V_user_V, i1 %trace_32_V_last_V, i1 %trace_32_V_id_V, i1 %trace_32_V_dest_V, i32 %trigger_read" [trace_cntrl_32/trace_cntrl_32.cpp:16]   --->   Operation 9 'call' 'call_ln16' <Predicate = true> <Delay = 5.92> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 2.47>
+ST_3 : Operation 10 [1/2] (2.47ns)   --->   "%call_ln16 = call void @trace_cntrl_32_Pipeline_VITIS_LOOP_28_1, i32 %length_r_read, i32 %sub, i32 %capture_32_V_data_V, i4 %capture_32_V_keep_V, i4 %capture_32_V_strb_V, i1 %capture_32_V_user_V, i1 %capture_32_V_last_V, i1 %capture_32_V_id_V, i1 %capture_32_V_dest_V, i32 %trace_32_V_data_V, i4 %trace_32_V_keep_V, i4 %trace_32_V_strb_V, i1 %trace_32_V_user_V, i1 %trace_32_V_last_V, i1 %trace_32_V_id_V, i1 %trace_32_V_dest_V, i32 %trigger_read" [trace_cntrl_32/trace_cntrl_32.cpp:16]   --->   Operation 10 'call' 'call_ln16' <Predicate = true> <Delay = 2.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%spectopmodule_ln14 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_7" [trace_cntrl_32/trace_cntrl_32.cpp:14]   --->   Operation 11 'spectopmodule' 'spectopmodule_ln14' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %trace_32_V_data_V, i4 %trace_32_V_keep_V, i4 %trace_32_V_strb_V, i1 %trace_32_V_user_V, i1 %trace_32_V_last_V, i1 %trace_32_V_id_V, i1 %trace_32_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 50, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %trace_32_V_data_V"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %trace_32_V_keep_V"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %trace_32_V_strb_V"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %trace_32_V_user_V"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %trace_32_V_last_V"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %trace_32_V_id_V"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %trace_32_V_dest_V"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %capture_32_V_data_V, i4 %capture_32_V_keep_V, i4 %capture_32_V_strb_V, i1 %capture_32_V_user_V, i1 %capture_32_V_last_V, i1 %capture_32_V_id_V, i1 %capture_32_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 50, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %capture_32_V_data_V"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %capture_32_V_keep_V"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %capture_32_V_strb_V"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %capture_32_V_user_V"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %capture_32_V_last_V"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %capture_32_V_id_V"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %capture_32_V_dest_V"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %trigger"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %trigger, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_4, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %trigger, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %length_r"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %length_r, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_6, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %length_r, void @empty_5, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [trace_cntrl_32/trace_cntrl_32.cpp:42]   --->   Operation 35 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ trace_32_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_id_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trace_32_V_dest_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_id_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ capture_32_V_dest_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ trigger]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ length_r]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+length_r_read      (read         ) [ 00110]
+trigger_read       (read         ) [ 00110]
+sub                (add          ) [ 00110]
+empty              (wait         ) [ 00000]
+call_ln16          (call         ) [ 00000]
+spectopmodule_ln14 (spectopmodule) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specbitsmap_ln0    (specbitsmap  ) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+specinterface_ln0  (specinterface) [ 00000]
+ret_ln42           (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="trace_32_V_data_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="trace_32_V_keep_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="trace_32_V_strb_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="trace_32_V_user_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="trace_32_V_last_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="trace_32_V_id_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_id_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="trace_32_V_dest_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_32_V_dest_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="capture_32_V_data_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="capture_32_V_keep_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_keep_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="capture_32_V_strb_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="capture_32_V_user_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="capture_32_V_last_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="capture_32_V_id_V">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_id_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="capture_32_V_dest_V">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="capture_32_V_dest_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="trigger">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trigger"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="length_r">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="length_r"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Wait"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="trace_cntrl_32_Pipeline_VITIS_LOOP_28_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="length_r_read_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="32" slack="0"/>
+<pin id="72" dir="0" index="1" bw="32" slack="0"/>
+<pin id="73" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="length_r_read/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="trigger_read_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="32" slack="0"/>
+<pin id="78" dir="0" index="1" bw="32" slack="0"/>
+<pin id="79" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="trigger_read/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="0" slack="0"/>
+<pin id="84" dir="0" index="1" bw="32" slack="1"/>
+<pin id="85" dir="0" index="2" bw="32" slack="1"/>
+<pin id="86" dir="0" index="3" bw="32" slack="0"/>
+<pin id="87" dir="0" index="4" bw="4" slack="0"/>
+<pin id="88" dir="0" index="5" bw="4" slack="0"/>
+<pin id="89" dir="0" index="6" bw="1" slack="0"/>
+<pin id="90" dir="0" index="7" bw="1" slack="0"/>
+<pin id="91" dir="0" index="8" bw="1" slack="0"/>
+<pin id="92" dir="0" index="9" bw="1" slack="0"/>
+<pin id="93" dir="0" index="10" bw="32" slack="0"/>
+<pin id="94" dir="0" index="11" bw="4" slack="0"/>
+<pin id="95" dir="0" index="12" bw="4" slack="0"/>
+<pin id="96" dir="0" index="13" bw="1" slack="0"/>
+<pin id="97" dir="0" index="14" bw="1" slack="0"/>
+<pin id="98" dir="0" index="15" bw="1" slack="0"/>
+<pin id="99" dir="0" index="16" bw="1" slack="0"/>
+<pin id="100" dir="0" index="17" bw="32" slack="1"/>
+<pin id="101" dir="1" index="18" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln16/2 "/>
+</bind>
+</comp>
+
+<comp id="117" class="1004" name="sub_fu_117">
+<pin_list>
+<pin id="118" dir="0" index="0" bw="32" slack="0"/>
+<pin id="119" dir="0" index="1" bw="1" slack="0"/>
+<pin id="120" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="sub/1 "/>
+</bind>
+</comp>
+
+<comp id="123" class="1005" name="length_r_read_reg_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="32" slack="1"/>
+<pin id="125" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="length_r_read "/>
+</bind>
+</comp>
+
+<comp id="128" class="1005" name="trigger_read_reg_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="32" slack="1"/>
+<pin id="130" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="trigger_read "/>
+</bind>
+</comp>
+
+<comp id="133" class="1005" name="sub_reg_133">
+<pin_list>
+<pin id="134" dir="0" index="0" bw="32" slack="1"/>
+<pin id="135" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="sub "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="74"><net_src comp="32" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="30" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="32" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="28" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="102"><net_src comp="38" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="103"><net_src comp="14" pin="0"/><net_sink comp="82" pin=3"/></net>
+
+<net id="104"><net_src comp="16" pin="0"/><net_sink comp="82" pin=4"/></net>
+
+<net id="105"><net_src comp="18" pin="0"/><net_sink comp="82" pin=5"/></net>
+
+<net id="106"><net_src comp="20" pin="0"/><net_sink comp="82" pin=6"/></net>
+
+<net id="107"><net_src comp="22" pin="0"/><net_sink comp="82" pin=7"/></net>
+
+<net id="108"><net_src comp="24" pin="0"/><net_sink comp="82" pin=8"/></net>
+
+<net id="109"><net_src comp="26" pin="0"/><net_sink comp="82" pin=9"/></net>
+
+<net id="110"><net_src comp="0" pin="0"/><net_sink comp="82" pin=10"/></net>
+
+<net id="111"><net_src comp="2" pin="0"/><net_sink comp="82" pin=11"/></net>
+
+<net id="112"><net_src comp="4" pin="0"/><net_sink comp="82" pin=12"/></net>
+
+<net id="113"><net_src comp="6" pin="0"/><net_sink comp="82" pin=13"/></net>
+
+<net id="114"><net_src comp="8" pin="0"/><net_sink comp="82" pin=14"/></net>
+
+<net id="115"><net_src comp="10" pin="0"/><net_sink comp="82" pin=15"/></net>
+
+<net id="116"><net_src comp="12" pin="0"/><net_sink comp="82" pin=16"/></net>
+
+<net id="121"><net_src comp="70" pin="2"/><net_sink comp="117" pin=0"/></net>
+
+<net id="122"><net_src comp="34" pin="0"/><net_sink comp="117" pin=1"/></net>
+
+<net id="126"><net_src comp="70" pin="2"/><net_sink comp="123" pin=0"/></net>
+
+<net id="127"><net_src comp="123" pin="1"/><net_sink comp="82" pin=1"/></net>
+
+<net id="131"><net_src comp="76" pin="2"/><net_sink comp="128" pin=0"/></net>
+
+<net id="132"><net_src comp="128" pin="1"/><net_sink comp="82" pin=17"/></net>
+
+<net id="136"><net_src comp="117" pin="2"/><net_sink comp="133" pin=0"/></net>
+
+<net id="137"><net_src comp="133" pin="1"/><net_sink comp="82" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: capture_32_V_data_V | {2 3 }
+	Port: capture_32_V_keep_V | {2 3 }
+	Port: capture_32_V_strb_V | {2 3 }
+	Port: capture_32_V_user_V | {2 3 }
+	Port: capture_32_V_last_V | {2 3 }
+	Port: capture_32_V_id_V | {2 3 }
+	Port: capture_32_V_dest_V | {2 3 }
+ - Input state : 
+	Port: trace_cntrl_32 : trace_32_V_data_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_keep_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_strb_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_user_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_last_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_id_V | {2 3 }
+	Port: trace_cntrl_32 : trace_32_V_dest_V | {2 3 }
+	Port: trace_cntrl_32 : trigger | {1 }
+	Port: trace_cntrl_32 : length_r | {1 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------------------------|---------|---------|
+| Operation|                  Functional Unit                  |    FF   |   LUT   |
+|----------|---------------------------------------------------|---------|---------|
+|   call   | grp_trace_cntrl_32_Pipeline_VITIS_LOOP_28_1_fu_82 |   174   |   205   |
+|----------|---------------------------------------------------|---------|---------|
+|    add   |                     sub_fu_117                    |    0    |    39   |
+|----------|---------------------------------------------------|---------|---------|
+|   read   |              length_r_read_read_fu_70             |    0    |    0    |
+|          |              trigger_read_read_fu_76              |    0    |    0    |
+|----------|---------------------------------------------------|---------|---------|
+|   Total  |                                                   |   174   |   244   |
+|----------|---------------------------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++---------------------+--------+
+|                     |   FF   |
++---------------------+--------+
+|length_r_read_reg_123|   32   |
+|     sub_reg_133     |   32   |
+| trigger_read_reg_128|   32   |
++---------------------+--------+
+|        Total        |   96   |
++---------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |   174  |   244  |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |   96   |    -   |
++-----------+--------+--------+
+|   Total   |   270  |   244  |
++-----------+--------+--------+

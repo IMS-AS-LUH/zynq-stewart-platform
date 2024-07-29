@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="or_ln904_fu_157_p2" SOURCE="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:904" VARIABLE="or_ln904" MODULE="pixel_unpack_Pipeline_VITIS_LOOP_19_1" LOOP="VITIS_LOOP_19_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="has_user_V_fu_163_p2" SOURCE="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:904" VARIABLE="has_user_V" MODULE="pixel_unpack_Pipeline_VITIS_LOOP_19_1" LOOP="VITIS_LOOP_19_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="or_ln28_fu_170_p2" SOURCE="pixel_unpack/pixel_unpack.cpp:28" VARIABLE="or_ln28" MODULE="pixel_unpack_Pipeline_VITIS_LOOP_19_1" LOOP="VITIS_LOOP_19_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="last_fu_176_p2" SOURCE="pixel_unpack/pixel_unpack.cpp:28" VARIABLE="last" MODULE="pixel_unpack_Pipeline_VITIS_LOOP_19_1" LOOP="VITIS_LOOP_19_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="pixel_unpack" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

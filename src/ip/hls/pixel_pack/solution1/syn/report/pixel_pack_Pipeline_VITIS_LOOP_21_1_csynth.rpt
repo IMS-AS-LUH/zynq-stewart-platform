@@ -1,0 +1,213 @@
+
+
+================================================================
+== Vitis HLS Report for 'pixel_pack_Pipeline_VITIS_LOOP_21_1'
+================================================================
+* Date:           Sat Apr 29 15:18:49 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        pixel_pack
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  3.415 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_21_1  |        ?|        ?|         6|          4|          4|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     52|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    262|    -|
+|Register         |        -|    -|     261|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     261|    314|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_pp0_stage2_11001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage3_01001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage3_11001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state1_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage1_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage2_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state4_io                |       and|   0|  0|   2|           1|           1|
+    |ap_block_state5_io                |       and|   0|  0|   2|           1|           1|
+    |ap_block_state6_io                |       and|   0|  0|   2|           1|           1|
+    |ap_condition_285                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_526                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_531                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_534                  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_540                  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op26_read_state1     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op30_read_state2     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op44_read_state3     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op53_read_state4     |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op67_write_state4    |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op78_write_state6    |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage1_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage1_11001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage3_iter0  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  52|          26|          27|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                     |  25|          5|    1|          5|
+    |ap_done_int                                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                       |   9|          2|    1|          2|
+    |ap_phi_mux_buffer_1_3_ph_phi_fu_155_p8        |   9|          2|   96|        192|
+    |ap_phi_mux_delayed_last_phi_fu_132_p4         |   9|          2|    1|          2|
+    |ap_phi_mux_has_last_1_3_ph_phi_fu_168_p8      |   9|          2|    4|          8|
+    |ap_phi_mux_has_user_1_3_ph_phi_fu_181_p8      |   9|          2|    3|          6|
+    |ap_phi_mux_last_2_3_ph_phi_fu_195_p8          |   9|          2|    1|          2|
+    |ap_phi_mux_last_8_phi_fu_144_p4               |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter0_buffer_1_3_ph_reg_152    |  14|          3|   96|        288|
+    |ap_phi_reg_pp0_iter0_has_last_1_3_ph_reg_165  |  14|          3|    4|         12|
+    |ap_phi_reg_pp0_iter0_has_user_1_3_ph_reg_178  |  14|          3|    3|          9|
+    |delayed_last_reg_129                          |   9|          2|    1|          2|
+    |last_2_31065_reg_208                          |   9|          2|    1|          2|
+    |last_8_reg_140                                |   9|          2|    1|          2|
+    |stream_in_24_TDATA_blk_n                      |   9|          2|    1|          2|
+    |stream_out_32_TDATA                           |  20|          4|   32|        128|
+    |stream_out_32_TDATA_blk_n                     |   9|          2|    1|          2|
+    |stream_out_32_TLAST                           |  20|          4|    1|          4|
+    |stream_out_32_TUSER                           |  20|          4|    1|          4|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         | 262|         56|  253|        680|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+----+----+-----+-----------+
+    |                     Name                     | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                     |   4|   0|    4|          0|
+    |ap_done_reg                                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg                   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                       |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter0_buffer_1_3_ph_reg_152    |  96|   0|   96|          0|
+    |ap_phi_reg_pp0_iter0_has_last_1_3_ph_reg_165  |   4|   0|    4|          0|
+    |ap_phi_reg_pp0_iter0_has_user_1_3_ph_reg_178  |   3|   0|    3|          0|
+    |delayed_last_reg_129                          |   1|   0|    1|          0|
+    |delayed_last_reg_129_pp0_iter1_reg            |   1|   0|    1|          0|
+    |last_2_31065_reg_208                          |   1|   0|    1|          0|
+    |last_8_reg_140                                |   1|   0|    1|          0|
+    |last_8_reg_140_pp0_iter1_reg                  |   1|   0|    1|          0|
+    |out_pixel_data_V_1_reg_528                    |  32|   0|   32|          0|
+    |out_pixel_data_V_2_reg_543                    |  32|   0|   32|          0|
+    |p_Result_5_reg_533                            |   1|   0|    1|          0|
+    |p_Result_6_reg_538                            |   1|   0|    1|          0|
+    |p_Result_7_reg_548                            |   1|   0|    1|          0|
+    |p_Result_8_reg_553                            |   1|   0|    1|          0|
+    |tmp_data_V_10_reg_452                         |  24|   0|   24|          0|
+    |tmp_data_V_11_reg_499                         |  24|   0|   24|          0|
+    |tmp_data_V_reg_435                            |  24|   0|   24|          0|
+    |tmp_last_V_7_reg_464                          |   1|   0|    1|          0|
+    |tmp_last_V_8_reg_509                          |   1|   0|    1|          0|
+    |tmp_last_V_reg_447                            |   1|   0|    1|          0|
+    |tmp_user_V_10_reg_504                         |   1|   0|    1|          0|
+    |tmp_user_V_9_reg_458                          |   1|   0|    1|          0|
+    |tmp_user_V_reg_441                            |   1|   0|    1|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+    |Total                                         | 261|   0|  261|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+-------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |            Source Object            |    C Type    |
++----------------------+-----+-----+------------+-------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  pixel_pack_Pipeline_VITIS_LOOP_21_1|  return value|
+|stream_in_24_TVALID   |   in|    1|        axis|                stream_in_24_V_data_V|       pointer|
+|stream_in_24_TDATA    |   in|   24|        axis|                stream_in_24_V_data_V|       pointer|
+|stream_out_32_TREADY  |   in|    1|        axis|               stream_out_32_V_data_V|       pointer|
+|stream_out_32_TDATA   |  out|   32|        axis|               stream_out_32_V_data_V|       pointer|
+|stream_out_32_TVALID  |  out|    1|        axis|               stream_out_32_V_last_V|       pointer|
+|stream_out_32_TLAST   |  out|    1|        axis|               stream_out_32_V_last_V|       pointer|
+|stream_out_32_TKEEP   |  out|    4|        axis|               stream_out_32_V_keep_V|       pointer|
+|stream_out_32_TSTRB   |  out|    4|        axis|               stream_out_32_V_strb_V|       pointer|
+|stream_out_32_TUSER   |  out|    1|        axis|               stream_out_32_V_user_V|       pointer|
+|stream_in_24_TREADY   |  out|    1|        axis|                stream_in_24_V_last_V|       pointer|
+|stream_in_24_TLAST    |   in|    1|        axis|                stream_in_24_V_last_V|       pointer|
+|stream_in_24_TKEEP    |   in|    3|        axis|                stream_in_24_V_keep_V|       pointer|
+|stream_in_24_TSTRB    |   in|    3|        axis|                stream_in_24_V_strb_V|       pointer|
+|stream_in_24_TUSER    |   in|    1|        axis|                stream_in_24_V_user_V|       pointer|
++----------------------+-----+-----+------------+-------------------------------------+--------------+
+

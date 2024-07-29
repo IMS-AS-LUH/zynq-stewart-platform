@@ -1,0 +1,441 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:182:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:327:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:370:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:388:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:399:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:409:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Sebastian/Documents/Studium/Master/HwP/PYNQ/boards/ip/hls/pixel_unpack/script.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=pixel_unpack" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite register port=mode" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis depth=24 port=stream_in_32 register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis depth=96 port=stream_out_24 register" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=4" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pixel_unpack/pixel_unpack.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base&lt;1, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" Caller="ap_int_base&lt;1, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_uint&lt;1&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;1&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:50" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:286:25" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:67" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:285:36" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:39" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:284:23" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12" msg_body="Inlining function 'ap_range_ref&lt;96, false&gt;::ap_range_ref(ap_int_base&lt;96, false&gt;*, int, int)' into 'ap_int_base&lt;96, false&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;96, false&gt;::ap_range_ref(ap_int_base&lt;96, false&gt;*, int, int)" Caller="ap_int_base&lt;96, false&gt;::range(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18" msg_body="Inlining function 'ap_int_base&lt;96, false&gt;::range(int, int)' into 'ap_int_base&lt;96, false&gt;::operator()(int, int)'">
+        <args Callee="ap_int_base&lt;96, false&gt;::range(int, int)" Caller="ap_int_base&lt;96, false&gt;::operator()(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi96ELb0EEC2EDq96_j' into 'ap_int_base&lt;96, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi96ELb0EEC2EDq96_j" Caller="ap_int_base&lt;96, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:413:31" msg_body="Inlining function 'ap_int_base&lt;96, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_range_ref&lt;96, false&gt;&amp; ap_range_ref&lt;96, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;96, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_range_ref&lt;96, false&gt;&amp; ap_range_ref&lt;96, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;96, false&gt;::get() const' into 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;96, false&gt;::get() const" Caller="ap_int_base&lt;24, false&gt;::ap_int_base&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:266:92" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)' into 'ap_uint&lt;24&gt;::ap_uint&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::ap_int_base&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)" Caller="ap_uint&lt;24&gt;::ap_uint&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12" msg_body="Inlining function 'ap_range_ref&lt;32, false&gt;::ap_range_ref(ap_int_base&lt;32, false&gt;*, int, int)' into 'ap_int_base&lt;32, false&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;32, false&gt;::ap_range_ref(ap_int_base&lt;32, false&gt;*, int, int)" Caller="ap_int_base&lt;32, false&gt;::range(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::range(int, int)' into 'ap_int_base&lt;32, false&gt;::operator()(int, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::range(int, int)" Caller="ap_int_base&lt;32, false&gt;::operator()(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;32, false&gt;::get() const' into 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;32, false&gt;::get() const" Caller="ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:266:92" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'ap_uint&lt;24&gt;::ap_uint&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="ap_uint&lt;24&gt;::ap_uint&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base&lt;24, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi24ELb0EEC2EDq24_j" Caller="ap_int_base&lt;24, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::ap_int_base(int)' into 'ap_uint&lt;24&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;24&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1094:12" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;::ap_range_ref(ap_int_base&lt;24, false&gt;*, int, int)' into 'ap_int_base&lt;24, false&gt;::range(int, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;::ap_range_ref(ap_int_base&lt;24, false&gt;*, int, int)" Caller="ap_int_base&lt;24, false&gt;::range(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:1131:18" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::range(int, int)' into 'ap_int_base&lt;24, false&gt;::operator()(int, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::range(int, int)" Caller="ap_int_base&lt;24, false&gt;::operator()(int, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:404:20" msg_body="Inlining function 'ap_range_ref&lt;32, false&gt;::get() const' into 'ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;32, false&gt;::get() const" Caller="ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi24ELb0EEC2EDq24_j' into 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="_ZN8ssdm_intILi24ELb0EEC2EDq24_j" Caller="ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:413:31" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:428:22" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::ap_int_base&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_int_ref.h:428:12" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:22:26" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:99:19" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:98:36" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:97:22" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:95:21" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:95:5" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:95:23" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:94:20" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:94:5" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:94:22" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:93:19" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:93:5" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:93:21" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:92:28" msg_body="Inlining function 'ap_uint&lt;24&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;24&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:89:11" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:87:15" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:80:19" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:79:36" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:78:22" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:76:20" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:76:5" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:76:22" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:75:28" msg_body="Inlining function 'ap_uint&lt;24&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;24&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:72:11" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:70:15" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:63:19" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:62:36" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:61:22" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:59:19" msg_body="Inlining function 'ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;24, false&gt;&amp; ap_range_ref&lt;24, false&gt;::operator=&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:59:5" msg_body="Inlining function 'ap_int_base&lt;24, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;24, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:59:21" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:58:28" msg_body="Inlining function 'ap_uint&lt;24&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;24&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:55:11" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:53:15" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:47:18" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:46:11" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:43:21" msg_body="Inlining function 'ap_uint&lt;24&gt;::ap_uint&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;24&gt;::ap_uint&lt;32, false&gt;(ap_range_ref&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:43:21" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:42:15" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:34:19" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:33:22" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:32:41" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:31:22" msg_body="Inlining function 'ap_uint&lt;24&gt;::ap_uint&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;24&gt;::ap_uint&lt;96, false&gt;(ap_range_ref&lt;96, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:31:22" msg_body="Inlining function 'ap_int_base&lt;96, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;96, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:28:13" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator unsigned long long() const' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::operator unsigned long long() const" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:27:14" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;&amp; ap_int_base&lt;1, false&gt;::operator|=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;&amp; ap_int_base&lt;1, false&gt;::operator|=&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:26:29" msg_body="Inlining function 'ap_range_ref&lt;96, false&gt;&amp; ap_range_ref&lt;96, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_range_ref&lt;96, false&gt;&amp; ap_range_ref&lt;96, false&gt;::operator=&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:26:5" msg_body="Inlining function 'ap_int_base&lt;96, false&gt;::operator()(int, int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_int_base&lt;96, false&gt;::operator()(int, int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:25:18" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;::read(hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;&amp;)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:23:26" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint(int)' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="ap_uint&lt;1&gt;::ap_uint(int)" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:24:21" msg_body="Loop 'VITIS_LOOP_24_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_24_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:30:21" msg_body="Loop 'VITIS_LOOP_30_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:57:21" msg_body="Loop 'VITIS_LOOP_57_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_57_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:74:21" msg_body="Loop 'VITIS_LOOP_74_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_74_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:91:22" msg_body="Loop 'VITIS_LOOP_91_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_91_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_24_2' (pixel_unpack/pixel_unpack.cpp:24:21) in function 'pixel_unpack' completely with a factor of 3">
+        <args Factor="3" LoopLoc="pixel_unpack/pixel_unpack.cpp:24:21" LoopName="VITIS_LOOP_24_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_30_3' (pixel_unpack/pixel_unpack.cpp:30:21) in function 'pixel_unpack' completely with a factor of 4">
+        <args Factor="4" LoopLoc="pixel_unpack/pixel_unpack.cpp:30:21" LoopName="VITIS_LOOP_30_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_57_6' (pixel_unpack/pixel_unpack.cpp:57:21) in function 'pixel_unpack' completely with a factor of 4">
+        <args Factor="4" LoopLoc="pixel_unpack/pixel_unpack.cpp:57:21" LoopName="VITIS_LOOP_57_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_74_8' (pixel_unpack/pixel_unpack.cpp:74:21) in function 'pixel_unpack' completely with a factor of 2">
+        <args Factor="2" LoopLoc="pixel_unpack/pixel_unpack.cpp:74:21" LoopName="VITIS_LOOP_74_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pixel_unpack/pixel_unpack.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_91_10' (pixel_unpack/pixel_unpack.cpp:91:22) in function 'pixel_unpack' completely with a factor of 2">
+        <args Factor="2" LoopLoc="pixel_unpack/pixel_unpack.cpp:91:22" LoopName="VITIS_LOOP_91_10"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;32&gt;s.i32' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;32&gt;s.i32" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i3.s_struct.ap_uint&lt;3&gt;s' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.pack.none.i3.s_struct.ap_uint&lt;3&gt;s" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/VITIS_~1/2022.1/common/technology/autopilot\ap_axi_sdata.h:283:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;4&gt;s.i4' into 'pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)'">
+        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;4&gt;s.i4" Caller="pixel_unpack(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 0ul, 0ul&gt;, 0&gt;&amp;, int)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

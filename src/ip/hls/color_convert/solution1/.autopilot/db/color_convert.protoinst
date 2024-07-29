@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"color_convert": {
+			"proto_instances": {
+			}
+		}
+	}
+}

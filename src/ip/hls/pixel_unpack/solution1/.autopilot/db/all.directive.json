@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "pixel_unpack",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/Sebastian\/Documents\/Studium\/Master\/HwP\/PYNQ\/boards\/ip\/hls\/pixel_unpack\/script.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "pixel_unpack"
+              }]
+          }
+        }]
+    }]}
